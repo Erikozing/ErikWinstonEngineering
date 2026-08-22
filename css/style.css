@@ -248,8 +248,8 @@ nav.site-nav .nav-resume-btn:hover{background:var(--accent-strong);color:var(--b
   box-shadow:inset 0 0 0 1px rgba(0,0,0,.4);
   background-color:#000;
   background-repeat:no-repeat;
-  background-size:138% auto;
-  background-position:49% 12%;
+  background-size:110% auto;
+  background-position:41% 3%;
 }
 .id-stats{padding:16px 18px 8px;display:flex;flex-direction:column;gap:9px;}
 .id-stat-row{display:flex;justify-content:space-between;gap:10px;font-family:var(--font-mono);font-size:12.5px;border-bottom:1px dashed var(--border);padding-bottom:7px;}
@@ -432,7 +432,8 @@ footer.site-footer{
   .hero-copy{order:1;}
   .hero-copy h1{max-width:none;margin-left:auto;margin-right:auto;}
   .credential-list{margin-left:auto;margin-right:auto;}
-  .credential-list li{text-align:left;}
+  .credential-list li{flex-direction:column;align-items:flex-start;gap:8px;text-align:left;}
+  .credential-logo{height:34px;}
   .id-card{width:min(400px, 100%);}
   .split,.split.reverse{grid-template-columns:1fr;}
   .split.reverse .split-media{order:0;}
