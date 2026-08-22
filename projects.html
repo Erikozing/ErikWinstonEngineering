@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects &mdash; Erik Winston</title>
+<meta name="description" content="Personal and team engineering projects by Erik Winston: rocket control algorithms, RF payloads, pipe inspection tools, sailing keel research, and CAD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .split-media .viewport + .viewport{margin-top:16px;}
+  .media-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;}
+  .media-pair .viewport{padding:8px;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logotype">
+    <span class="name">ERIK <em>WINSTON</em></span>
+    <span class="tag">Mechanical Engineering &middot; Controls</span>
+  </div>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="rocketry.html">Rocketry</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="beyond-engineering.html">Beyond Engineering</a>
+    <a class="nav-resume-btn" href="assets/resume/Erik-Winston-Resume.pdf" download>Download Resume</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="grid-field"></div>
+  <div class="reticle" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none">
+      <circle cx="200" cy="200" r="190" stroke="var(--border-strong)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="140" stroke="var(--border-strong)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="90" stroke="var(--accent-dim)" stroke-width="1"/>
+      <line x1="200" y1="0" x2="200" y2="400" stroke="var(--border)" stroke-width="1"/>
+      <line x1="0" y1="200" x2="400" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="3" fill="var(--accent)"/>
+    </svg>
+  </div>
+  <div class="page-hero-inner">
+    <h1>Projects</h1>
+  </div>
+</section>
+
+<section class="panel">
+
+  <article class="project-entry" id="lander">
+    <div class="split">
+      <div>
+        <h2 class="section-title">Liquid Propelled Rocket Lander Control Algorithm</h2>
+        <div class="body-copy">
+          <p>To support GNC programs at Rose Propulsion Laboratory and enable controller co-design, I'm developing control algorithms to evaluate combinations of different linearization techniques and control strategies in application for our liquid propelled rocket lander. Controls strategies under test include model predictive control, lookup table control, and more exciting (for me), Machine Learning Control. Linearization techniques under test include standard Jacobian, numerical, and gain scheduling.</p>
+        </div>
+      </div>
+      <div class="split-media">
+        <div class="viewport">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <video autoplay muted loop playsinline>
+            <source src="assets/projects/rocket-control-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="chart-panel">
+          <div class="screen"><img src="assets/projects/rocket-flight-path.png" alt="3-D flight path plot: guidance reference vs. MPC-controlled actual trajectory to landing pad"></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-entry" id="usli">
+    <div class="split reverse">
+      <div class="split-media">
+        <div class="media-pair">
+          <div class="viewport">
+            <span class="corner tl"></span><span class="corner br"></span>
+            <img src="assets/projects/usli-photo-1.jpeg" alt="University Student Launch Initiative rocket photo 1">
+          </div>
+          <div class="viewport">
+            <span class="corner tl"></span><span class="corner br"></span>
+            <img src="assets/projects/usli-photo-2.jpeg" alt="University Student Launch Initiative rocket photo 2">
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title">University Student Launch Initiative</h2>
+        <div class="body-copy">
+          <p>While working with Rose Rocketry's USLI team, I helped develop the RF payload, tasked with gathering pressure, temperature, altitude, and other flight data from 8,000&nbsp;ft, then transmitting it back to a ground station using an STM32 microcontroller and a HackRF radio module. RF engineering concepts were completely foreign to me at first, but I welcomed the opportunity to broaden my engineering skills.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-entry" id="pipe-camera">
+    <div class="split">
+      <div>
+        <h2 class="section-title">Milwaukee Tool Pipe Camera Skid</h2>
+        <div class="body-copy">
+          <p>I worked with a team of my peers to develop a camera skid to improve the pipe inspection capability of the Milwaukee Tool Pipe Camera. After getting customer feedback from plumbers, we produced a design that uses two attachments with compliant arms and added lighting elements to provide better visibility and corner&#8209;rounding capability to the tool, then communicated our final product to Milwaukee Tool in a formal presentation. This project served as my introduction to structured engineering process models and greatly informed how I have approached subsequent project management.</p>
+        </div>
+      </div>
+      <div class="split-media">
+        <div class="viewport">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <img src="assets/projects/milwaukee-pipe-camera.png" alt="Milwaukee Tool Pipe Camera skid design">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-entry" id="sailing-keel">
+    <div class="split reverse">
+      <div class="split-media">
+        <div class="viewport">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <img src="assets/projects/sailing-keel.png" alt="Variable-shape sailing keel research diagram">
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title">Variable&#8209;Shape Sailing Keel</h2>
+        <div class="body-copy">
+          <p>In accordance with my fascination with sailing, I conducted a year&#8209;long research project into a novel keel design that uses a two&#8209;part keel with a hinge in the middle to allow it to change shape. By hinging the keel, it could form an airfoil shape, directing lift to either port or starboard&mdash;allowing the keel to better resist the moment exerted by the wind on the sail, giving the boat a higher top speed. After fabricating a proof&#8209;of&#8209;concept model and testing in an endless pool, I produced an IEEE paper to communicate the findings.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-entry" id="minas-tirith">
+    <div class="split">
+      <div>
+        <h2 class="section-title">CAD Model of Minas Tirith</h2>
+        <div class="body-copy">
+          <p>I think preserving my passion for engineering hinges on not using my skills and knowledge in exclusively serious ways, and allowing myself to explore concepts and tools in a way that is fun. To that end, here's a SOLIDWORKS model I made of my best approximation of the city of Minas Tirith from The Lord of the Rings.</p>
+        </div>
+      </div>
+      <div class="split-media">
+        <div class="viewport">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <img src="assets/projects/minas-tirith-cad.png" alt="SOLIDWORKS CAD model of Minas Tirith from The Lord of the Rings">
+        </div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<footer class="site-footer">
+  <span class="footer-id">Erik Winston &middot; Mechanical Engineering &middot; Rose&#8209;Hulman</span>
+  <div class="footer-links">
+    <a href="mailto:winstoe@rose-hulman.edu">Email</a>
+    <a href="assets/resume/Erik-Winston-Resume.pdf" download>Resume</a>
+    <a href="https://www.linkedin.com/in/erik-winston-2a38412b8/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

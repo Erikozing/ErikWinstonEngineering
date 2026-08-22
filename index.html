@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erik Winston &mdash; Mechanical Engineering</title>
+<meta name="description" content="Erik Winston: mechanical engineering student building control systems for liquid rocket engines at Rose Propulsion Laboratory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logotype">
+    <span class="name">ERIK <em>WINSTON</em></span>
+    <span class="tag">Mechanical Engineering &middot; Controls</span>
+  </div>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="rocketry.html">Rocketry</a>
+    <a href="projects.html">Projects</a>
+    <a href="beyond-engineering.html">Beyond Engineering</a>
+    <a class="nav-resume-btn" href="assets/resume/Erik-Winston-Resume.pdf" download>Download Resume</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="grid-field"></div>
+  <div class="reticle" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none">
+      <circle cx="200" cy="200" r="190" stroke="var(--border-strong)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="140" stroke="var(--border-strong)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="90" stroke="var(--accent-dim)" stroke-width="1"/>
+      <line x1="200" y1="0" x2="200" y2="400" stroke="var(--border)" stroke-width="1"/>
+      <line x1="0" y1="200" x2="400" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="3" fill="var(--accent)"/>
+    </svg>
+  </div>
+
+  <div class="card-wrap">
+    <div class="id-card">
+      <div class="id-card-inner">
+        <div class="id-card-head">
+          <span class="id-name">Erik Winston</span>
+          <span class="id-type-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="var(--bg)" stroke-width="1.6"/>
+              <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="var(--bg)" stroke-width="1.6" transform="rotate(60 12 12)"/>
+              <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="var(--bg)" stroke-width="1.6" transform="rotate(120 12 12)"/>
+              <circle cx="12" cy="12" r="2.1" fill="var(--bg)"/>
+            </svg>
+          </span>
+        </div>
+        <div class="id-photo" role="img" aria-label="Erik Winston" style="background-image:url('assets/home/pokemon-image.jpeg');"></div>
+        <div class="id-stats">
+          <div class="id-stat-row"><span class="k">MAJOR</span><span class="v">Mechanical Engineering, BS/MS</span></div>
+          <div class="id-stat-row"><span class="k">SCHOOL</span><span class="v">Rose&#8209;Hulman</span></div>
+          <div class="id-stat-row"><span class="k">CLASS</span><span class="v">2027</span></div>
+        </div>
+        <div class="id-move">
+          <div class="move-label">SPECIAL MOVE</div>
+          <div class="move-name-row">
+            <svg class="move-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13 2 L4 14h6l-1 8 9-12h-6z"/>
+            </svg>
+            <span class="move-name">ML Control Algorithms</span>
+          </div>
+        </div>
+      </div>
+      <div class="id-card-foot"></div>
+    </div>
+  </div>
+
+  <div class="hero-copy">
+    <span class="eyebrow"><span class="dot"></span>Available for full-time roles, 2027</span>
+    <h1>Hi there, I'm Erik Winston, mechanical engineering student and certified control <span class="small">(theory)</span> freak.</h1>
+    <ul class="credential-list">
+      <li>
+        <span class="credential-logo">
+          <img src="assets/home/general-atomics-logo.svg" alt="General Atomics logo">
+        </span>
+        <span class="credential-text">2 summers of experience developing picosat systems at General Atomics EMS</span>
+      </li>
+      <li>
+        <span class="credential-logo badge">
+          <img src="assets/home/rose-propulsion-laboratory-logo.jpg" alt="Rose Propulsion Laboratory logo">
+        </span>
+        <span class="credential-text">3 years of experience developing liquid rocket engines and control systems at Rose Propulsion Laboratory (student organization)</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="panel" id="current-project">
+  <h2 class="section-title">Current Project</h2>
+  <div class="split">
+    <div>
+      <h3 class="project-title">Liquid Propelled Rocket Lander Control Algorithm</h3>
+      <div class="body-copy">
+        <p>To support GNC programs at Rose Propulsion Laboratory and enable controller co-design, I'm developing control algorithms to evaluate combinations of different linearization techniques and control strategies in application for our liquid propelled rocket lander. Controls strategies under test include model predictive control, lookup table control, and more exciting (for me), Machine Learning Control. Linearization techniques under test include standard Jacobian, numerical, and gain scheduling.</p>
+      </div>
+    </div>
+    <div class="split-media">
+      <div class="viewport">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <video autoplay muted loop playsinline>
+          <source src="assets/projects/rocket-control-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="chart-panel">
+        <div class="screen"><img src="assets/projects/rocket-flight-path.png" alt="3-D flight path plot: guidance reference vs. MPC-controlled actual trajectory to landing pad"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span class="footer-id">Erik Winston &middot; Mechanical Engineering &middot; Rose&#8209;Hulman</span>
+  <div class="footer-links">
+    <a href="mailto:winstoe@rose-hulman.edu">Email</a>
+    <a href="assets/resume/Erik-Winston-Resume.pdf" download>Resume</a>
+    <a href="https://www.linkedin.com/in/erik-winston-2a38412b8/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
